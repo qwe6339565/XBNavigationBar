@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Masonry.h"
 
 @interface UIView (XBNavigationBar)
 //获取当前view的VC

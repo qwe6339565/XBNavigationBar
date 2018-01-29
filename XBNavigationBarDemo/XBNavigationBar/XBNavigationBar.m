@@ -10,7 +10,7 @@
 #import "UIView+XBNavigationBar.h"
 
 #define NAV_HEIGHT 64
-
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 @implementation XBNavigationBar
 
 - (instancetype)initWithFrame:(CGRect)frame{
@@ -32,8 +32,7 @@
     }];
     
     _btnLeft = [[UIButton alloc] init];
-//    _btnLeft.backgroundColor = [UIColor redColor];
-    _btnLeft.titleLabel.font = [MyAdapter lfontADapter:15];
+    _btnLeft.titleLabel.font = [UIFont systemFontOfSize:15];
     [_btnLeft setImage:[UIImage imageNamed:@"go_left"] forState:UIControlStateNormal];
     [_btnLeft setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self addSubview:_btnLeft];
@@ -45,8 +44,7 @@
     }];
     
     _btnRight = [[UIButton alloc] init];
-//    _btnRight.backgroundColor = [UIColor redColor];
-    _btnRight.titleLabel.font = [MyAdapter lfontADapter:14];
+    _btnRight.titleLabel.font = [UIFont systemFontOfSize:14];
     _btnRight.titleLabel.textAlignment = NSTextAlignmentCenter;
     [_btnRight setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self addSubview:_btnRight];
@@ -58,7 +56,7 @@
     }];
     
     _centerView = [[UIView alloc] init];
-//    _centerView.backgroundColor = [UIColor yellowColor];
+    
     [self addSubview:_centerView];
     [_centerView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.offset(20);
@@ -69,7 +67,7 @@
     
     _titleLabel = [[UILabel alloc] init];
     _titleLabel.textColor = [UIColor blackColor];
-    _titleLabel.font = [MyAdapter lfontADapter:18];
+    _titleLabel.font = [UIFont systemFontOfSize:18];
     [self addSubview:_titleLabel];
     [_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(_btnLeft);
@@ -77,7 +75,7 @@
     }];
     
     _btnRightStandBy = [[UIButton alloc] init];
-    _btnRightStandBy.titleLabel.font = [MyAdapter lfontADapter:15];
+    _btnRightStandBy.titleLabel.font = [UIFont systemFontOfSize:15];
     [_btnRightStandBy setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self addSubview:_btnRightStandBy];
     [_btnRightStandBy mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -93,7 +91,7 @@
     if (!self.currentViewController.navigationController.navigationBarHidden) {
         self.currentViewController.navigationController.navigationBarHidden = YES;
     }
-    WS(wself);
+    __weak typeof(self) wself = self;
     [self.superview xb_bringToFrontBlock:^{
         __strong typeof(wself) sself = wself;
         [sself.superview bringSubviewToFront:wself];
