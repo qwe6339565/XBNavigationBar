@@ -9,8 +9,6 @@
 #import "XBNavigationBar.h"
 #import "UIView+XBNavigationBar.h"
 
-#define NAV_HEIGHT 64
-#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 @implementation XBNavigationBar
 
 - (instancetype)initWithFrame:(CGRect)frame{

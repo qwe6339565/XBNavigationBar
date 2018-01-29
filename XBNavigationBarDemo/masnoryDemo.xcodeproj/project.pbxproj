@@ -67,6 +67,7 @@
 		F41F5D58201F741C00A066E0 /* SencondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SencondViewController.m; sourceTree = "<group>"; };
 		F41F5D5A201F763F00A066E0 /* go_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "go_left@2x.png"; sourceTree = "<group>"; };
 		F41F5D5B201F763F00A066E0 /* go_left@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "go_left@3x.png"; sourceTree = "<group>"; };
+		F41F5D5E201F7D2900A066E0 /* XBNavigationBarHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBNavigationBarHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +185,7 @@
 			children = (
 				F41F5D5A201F763F00A066E0 /* go_left@2x.png */,
 				F41F5D5B201F763F00A066E0 /* go_left@3x.png */,
+				F41F5D5E201F7D2900A066E0 /* XBNavigationBarHeader.h */,
 				F41F5D51201F722300A066E0 /* UIView+XBNavigationBar.h */,
 				F41F5D52201F722300A066E0 /* UIView+XBNavigationBar.m */,
 				F41F5D53201F722300A066E0 /* XBNavigationBar.h */,
