@@ -18,8 +18,8 @@
 		F41F5D55201F722300A066E0 /* UIView+XBNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F41F5D52201F722300A066E0 /* UIView+XBNavigationBar.m */; };
 		F41F5D56201F722300A066E0 /* XBNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F41F5D54201F722300A066E0 /* XBNavigationBar.m */; };
 		F41F5D59201F741C00A066E0 /* SencondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41F5D58201F741C00A066E0 /* SencondViewController.m */; };
-		F41F5D5C201F763F00A066E0 /* go_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F41F5D5A201F763F00A066E0 /* go_left@2x.png */; };
-		F41F5D5D201F763F00A066E0 /* go_left@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F41F5D5B201F763F00A066E0 /* go_left@3x.png */; };
+		F41F5DB320234BCA00A066E0 /* go_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F41F5DB120234BCA00A066E0 /* go_left@2x.png */; };
+		F41F5DB420234BCA00A066E0 /* go_left@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F41F5DB220234BCA00A066E0 /* go_left@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,9 +65,9 @@
 		F41F5D54201F722300A066E0 /* XBNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBNavigationBar.m; sourceTree = "<group>"; };
 		F41F5D57201F741C00A066E0 /* SencondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SencondViewController.h; sourceTree = "<group>"; };
 		F41F5D58201F741C00A066E0 /* SencondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SencondViewController.m; sourceTree = "<group>"; };
-		F41F5D5A201F763F00A066E0 /* go_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "go_left@2x.png"; sourceTree = "<group>"; };
-		F41F5D5B201F763F00A066E0 /* go_left@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "go_left@3x.png"; sourceTree = "<group>"; };
 		F41F5D5E201F7D2900A066E0 /* XBNavigationBarHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBNavigationBarHeader.h; sourceTree = "<group>"; };
+		F41F5DB120234BCA00A066E0 /* go_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "go_left@2x.png"; sourceTree = "<group>"; };
+		F41F5DB220234BCA00A066E0 /* go_left@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "go_left@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,8 +183,7 @@
 		F41F5D50201F722300A066E0 /* XBNavigationBar */ = {
 			isa = PBXGroup;
 			children = (
-				F41F5D5A201F763F00A066E0 /* go_left@2x.png */,
-				F41F5D5B201F763F00A066E0 /* go_left@3x.png */,
+				F41F5DB020234BCA00A066E0 /* Resources */,
 				F41F5D5E201F7D2900A066E0 /* XBNavigationBarHeader.h */,
 				F41F5D51201F722300A066E0 /* UIView+XBNavigationBar.h */,
 				F41F5D52201F722300A066E0 /* UIView+XBNavigationBar.m */,
@@ -192,6 +191,15 @@
 				F41F5D54201F722300A066E0 /* XBNavigationBar.m */,
 			);
 			path = XBNavigationBar;
+			sourceTree = "<group>";
+		};
+		F41F5DB020234BCA00A066E0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F41F5DB120234BCA00A066E0 /* go_left@2x.png */,
+				F41F5DB220234BCA00A066E0 /* go_left@3x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,10 +311,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F41F5D5D201F763F00A066E0 /* go_left@3x.png in Resources */,
+				F41F5DB420234BCA00A066E0 /* go_left@3x.png in Resources */,
 				81AAA6511D96768800B0AF99 /* LaunchScreen.storyboard in Resources */,
 				81AAA64E1D96768800B0AF99 /* Assets.xcassets in Resources */,
-				F41F5D5C201F763F00A066E0 /* go_left@2x.png in Resources */,
+				F41F5DB320234BCA00A066E0 /* go_left@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

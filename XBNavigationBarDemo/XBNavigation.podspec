@@ -91,12 +91,13 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "XBNavigationBar", "XBNavigationBar/**/*.{h,m}"
-  s.exclude_files = "XBNavigationBar/Exclude"
+  s.source_files  = "XBNavigationBarDemo/XBNavigationBar", "XBNavigationBarDemo/XBNavigationBar/**/*.{h,m}"
+  # s.exclude_files = "XBNavigationBarDemo/XBNavigationBar/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
-  s.public_header_files = 'XBNavigationBar/XBNavigationBarHeader.h'
-  s.source_files = 'XBNavigationBar/XBNavigationBarHeader.h'
+  s.public_header_files = 'XBNavigationBarDemo/XBNavigationBar/XBNavigationBarHeader.h'
+  # s.source_files  = "XBNavigationBarDemo", "XBNavigationBarDemo/XBNavigationBar/**/*.{h,m}"
+  # s.source_files = 'XBNavigationBarDemo/XBNavigationBar/XBNavigationBarHeader.h'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -106,7 +107,7 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  s.resource  = "XBNavigationBar/Resources/*.png"
+  # s.resource  = "icon.png"
   # s.resources = "Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"

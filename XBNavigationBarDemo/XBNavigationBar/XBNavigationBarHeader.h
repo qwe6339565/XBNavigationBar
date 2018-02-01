@@ -13,5 +13,7 @@
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 
 #import "Masonry.h"
+#import "XBNavigationBar.h"
+#import "UIView+XBNavigationBar.h"
 
 #endif /* XBNavigationBarHeader_h */
