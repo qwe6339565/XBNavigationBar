@@ -15,8 +15,8 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "XBNavigation"
-  s.version      = "1.0.2"
+  s.name         = "XBNavigationBar"
+  s.version      = "1.0.3"
   s.summary      = "一个自定义的导航条"
 
   # This description is used to generate tags and improve search results.
@@ -106,8 +106,8 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  s.resource  = "XBNavigationBar/Resources/*.png"
-  # s.resources = "Resources/*.png"
+  # s.resource  = "icon.png"
+  s.resources = "XBNavigationBar/Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
